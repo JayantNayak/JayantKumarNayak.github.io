@@ -25,14 +25,7 @@
 .timeline > li:after {
   clear: both;
 }
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
+
 .timeline > li > .timeline-panel {
   width: 50%;
   float: left;
@@ -43,6 +36,7 @@
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
+
 .timeline > li.timeline-inverted + li:not(.timeline-inverted),
 .timeline > li:not(.timeline-inverted) + li.timeline-inverted {
 margin-top: -60px;
@@ -135,4 +129,47 @@ padding-left:90px;
 }
 .timeline-body > p + p {
   margin-top: 5px;
+}
+.timeline > li.timeline-inverted + li:not(.timeline-inverted),
+.timeline > li:not(.timeline-inverted) + li.timeline-inverted {
+margin-top: -60px;
+}
+
+.timeline > li:not(.timeline-inverted) {
+padding-right:75px;
+}
+
+.timeline > li.timeline-inverted {
+padding-left:75px;
+}
+
+@media (max-width: 767px) {
+	ul.timeline:before {
+	left: 40px;
+	}
+	ul.timeline > li > .timeline-panel {
+	width: calc(100% - 90px);
+	width: -moz-calc(100% - 90px);
+	width: -webkit-calc(100% - 90px);
+	}
+	ul.timeline > li > .timeline-badge {
+	left: 15px;
+	margin-left: 0;
+	top: 16px;
+	}
+	ul.timeline > li > .timeline-panel {
+	float: right;
+	}
+	ul.timeline > li > .timeline-panel:before {
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
+	}
+	ul.timeline > li > .timeline-panel:after {
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -14px;
+	right: auto;
+	}
 }
