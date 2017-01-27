@@ -132,7 +132,7 @@ padding-left:90px;
 }
 .timeline > li.timeline-inverted + li:not(.timeline-inverted),
 .timeline > li:not(.timeline-inverted) + li.timeline-inverted {
-margin-top: -60px;
+margin-top: 0px;
 }
 
 .timeline > li:not(.timeline-inverted) {
@@ -171,5 +171,11 @@ padding-left:75px;
 	border-right-width: 14px;
 	left: -14px;
 	right: auto;
+	}
+	.timeline > li.timeline-inverted {
+		padding-left:0px;
+		width: calc(100% - 75px);
+		width: -moz-calc(100% - 75px);
+		width: -webkit-calc(100% - 75px);
 	}
 }

@@ -8,3 +8,13 @@
 .profileImg{
   margin-bottom: 50px
 }
+.timelineIcon{
+	width:55px;
+	height:55px;
+}
+.timelineRole{
+	  color: #5b9acf;
+}
+.timelineRoleIcon{
+		width:100px;
+}
