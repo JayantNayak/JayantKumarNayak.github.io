@@ -12,6 +12,9 @@
 	width:55px;
 	height:55px;
 }
+.roundTimelineIcon{
+	  border-radius: 100%;
+}
 .timelineRole{
 	  color: #5b9acf;
 }
