@@ -189,6 +189,15 @@ padding-left:75px;
 	width: calc(100% - 10px); 
 	width: -moz-calc(100% - 10px);
 	width: -webkit-calc(100% - 10px); 
-	margin-right:-80px;
+	margin-right:-55px;
 	}
+	ul.timeline > li > .timeline-badge {
+	left: -5px;
+
+	}
+	.timeline:before {
+   
+    margin-left: -19px;
 }
+}
+
