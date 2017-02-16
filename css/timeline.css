@@ -179,3 +179,16 @@ padding-left:75px;
 		width: -webkit-calc(100% - 75px);
 	}
 }
+
+
+@media (max-width: 450px) {
+	ul.timeline:before {
+	left: 40px;
+	}
+	ul.timeline > li > .timeline-panel {
+	width: calc(100% - 10px); 
+	width: -moz-calc(100% - 10px);
+	width: -webkit-calc(100% - 10px); 
+	margin-right:-80px;
+	}
+}
